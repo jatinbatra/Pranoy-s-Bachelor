@@ -8,7 +8,7 @@ interface DialogueBoxProps {
 
 const DialogueBox: React.FC<DialogueBoxProps> = ({ story, canProceed, onProceed }) => {
   return (
-    <div className="h-1/3 md:h-1/4 bg-blue-900 border-t-4 border-blue-700 p-4 flex items-center justify-between text-lg">
+    <div className="h-1/3 md:h-1/4 bg-blue-900 border-t-4 border-blue-700 p-4 flex items-center justify-between text-sm sm:text-lg">
       <p className="flex-grow pr-4 leading-tight">{story}</p>
       {canProceed && (
         <button 
@@ -19,7 +19,7 @@ const DialogueBox: React.FC<DialogueBoxProps> = ({ story, canProceed, onProceed 
         </button>
       )}
        {!canProceed && (
-        <div className="text-white text-base text-center w-48 p-2 border-2 border-dashed border-gray-500 rounded-lg">
+        <div className="text-white text-xs sm:text-base text-center w-36 sm:w-48 p-2 border-2 border-dashed border-gray-500 rounded-lg flex-shrink-0">
           <p className="font-bold">Collect all items!</p>
         </div>
        )}

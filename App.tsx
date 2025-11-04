@@ -18,12 +18,18 @@ const App: React.FC = () => {
   const [dynamicItemPositions, setDynamicItemPositions] = useState<{ [id: string]: { x: number, y: number, vx: number } }>({});
   const [isStunned, setIsStunned] = useState(false);
   const [walkFrame, setWalkFrame] = useState(0);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   const keyState = useRef<{ [key: string]: boolean }>({});
+  const touchState = useRef<{ [key: string]: boolean }>({});
   const pranayVelocityY = useRef(0);
   const onGround = useRef(true);
   
   const currentLevel: LevelData = LEVELS[currentLevelIndex];
+
+  useEffect(() => {
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  }, []);
 
   const resetPlayerState = useCallback(() => {
     setPranayPosition({ x: 10, y: GROUND_LEVEL });
@@ -122,6 +128,23 @@ const App: React.FC = () => {
 
   const allItemsCollected = collectedItems.length === currentLevel.items.filter(item => !item.isObstacle && !item.isEnemy).length;
 
+  const handleTouchStart = useCallback((direction: 'left' | 'right' | 'jump') => {
+    if (direction === 'jump') {
+      if (gameState === GameState.Playing && onGround.current) {
+        pranayVelocityY.current = JUMP_STRENGTH;
+        onGround.current = false;
+        Sound.playJumpSound();
+      }
+    } else {
+      touchState.current[direction] = true;
+    }
+  }, [gameState]);
+
+  const handleTouchEnd = useCallback((direction: 'left' | 'right') => {
+    touchState.current[direction] = false;
+  }, []);
+
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       keyState.current[e.key] = true;
@@ -154,11 +177,11 @@ const App: React.FC = () => {
         setPranayPosition(prev => {
           let newX = prev.x;
           if (!isStunned) {
-            if (keyState.current['ArrowLeft']) {
+            if (keyState.current['ArrowLeft'] || touchState.current['left']) {
               newX -= 0.8;
               isMoving = true;
             }
-            if (keyState.current['ArrowRight']) {
+            if (keyState.current['ArrowRight'] || touchState.current['right']) {
               newX += 0.8;
               isMoving = true;
             }
@@ -255,6 +278,9 @@ const App: React.FC = () => {
             dynamicItemPositions={dynamicItemPositions}
             isStunned={isStunned}
             walkFrame={walkFrame}
+            isTouchDevice={isTouchDevice}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           />
         );
       case GameState.End:
@@ -265,8 +291,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-800 min-h-screen flex items-center justify-center p-4 text-white">
-      <div className="w-full max-w-4xl aspect-video bg-black border-4 border-gray-600 shadow-2xl shadow-cyan-500/20 rounded-lg overflow-hidden flex flex-col relative">
+    <div className="bg-black min-h-screen flex items-center justify-center text-white">
+      <div className="w-full h-full max-h-[100svh] sm:max-w-4xl sm:aspect-video sm:h-auto bg-black border-0 sm:border-4 border-gray-600 sm:shadow-2xl shadow-cyan-500/20 sm:rounded-lg overflow-hidden flex flex-col relative">
         {renderContent()}
       </div>
     </div>

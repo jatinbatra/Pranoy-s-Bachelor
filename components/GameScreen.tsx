@@ -2,6 +2,7 @@ import React from 'react';
 import { LevelData } from '../types';
 import DialogueBox from './DialogueBox';
 import { PranayIcon, PranayIconWalk } from './Icons';
+import TouchControls from './TouchControls';
 
 interface GameScreenProps {
   level: LevelData;
@@ -12,9 +13,12 @@ interface GameScreenProps {
   dynamicItemPositions: { [id: string]: { x: number, y: number, vx: number } };
   isStunned: boolean;
   walkFrame: number;
+  isTouchDevice: boolean;
+  onTouchStart: (direction: 'left' | 'right' | 'jump') => void;
+  onTouchEnd: (direction: 'left' | 'right') => void;
 }
 
-const GameScreen: React.FC<GameScreenProps> = ({ level, collectedItems, onNextLevel, allItemsCollected, pranayPosition, dynamicItemPositions, isStunned, walkFrame }) => {
+const GameScreen: React.FC<GameScreenProps> = ({ level, collectedItems, onNextLevel, allItemsCollected, pranayPosition, dynamicItemPositions, isStunned, walkFrame, isTouchDevice, onTouchStart, onTouchEnd }) => {
   
   const PranoyCharacter = walkFrame === 1 ? PranayIconWalk : PranayIcon;
 
@@ -68,6 +72,8 @@ const GameScreen: React.FC<GameScreenProps> = ({ level, collectedItems, onNextLe
             </div>
           );
         })}
+
+        {isTouchDevice && <TouchControls onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} />}
       </div>
       <DialogueBox
         story={level.story}
