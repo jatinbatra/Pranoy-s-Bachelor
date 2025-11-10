@@ -12,29 +12,45 @@ This is both a playable game about Pranoy's journey AND a template for you to cr
 
 ## 🎯 Two Ways to Use This Project
 
-### 1. Play Pranoy's Game
+### 1. Play Pranoy's Game (Main Directory)
 Experience the original "Super Pranoy - The Bachelor's Journey" - a fun platformer about life, love, and adventures!
+- Run from the main directory
+- See a complete example game
 
-### 2. Make Your Own Game!
-Use this as a template to create your own Super Mario-style game:
-- 🎂 Birthday or wedding gifts
-- 💑 Love stories
-- 🎓 Graduation journeys
-- 🏆 Career paths
-- 🎉 Any personal story!
+### 2. Make Your Own Game! (Template Directory)
+**⭐ START HERE:** Go to the **[`/template`](template/)** directory for a ready-to-use starter!
+- 📁 **[template/](template/)** - Complete starter template with example levels
+- 🎂 Perfect for: Birthday gifts, wedding presents, love stories, career journeys, fitness transformations
+- 📚 Includes: All documentation, examples, and a clean starting point
+- ✨ **Just copy the template folder and start customizing!**
 
 ---
 
 ## 🚀 Quick Start
 
-### For Non-Coders (Easiest!)
-**📖 Read: [QUICK_START.md](QUICK_START.md)** - Complete beginner's guide!
+### Want to Create Your Own Game?
+**🎯 Go to [`/template`](template/) directory and read the [template/README.md](template/README.md)**
 
-### For Everyone
-**📚 Read: [TEMPLATE_README.md](TEMPLATE_README.md)** - Detailed template instructions!
+The template folder is a complete, ready-to-use starter with:
+- Clean example levels to customize
+- All documentation included
+- Example game themes
+- No setup needed - just copy and edit!
 
-### For Inspiration
-**💡 Check: [examples/](examples/)** - Pre-made game themes (fitness, career, love story)!
+### Want to See How It Works?
+**Play Pranoy's game from the main directory:**
+
+```bash
+# From the main directory
+npm install
+npm run dev
+```
+
+### Documentation:
+- **[template/README.md](template/README.md)** - Template quick start
+- **[template/QUICK_START.md](template/QUICK_START.md)** - Complete beginner's guide!
+- **[template/HOW_TO_CUSTOMIZE.md](template/HOW_TO_CUSTOMIZE.md)** - Customization instructions!
+- **[template/examples/](template/examples/)** - Pre-made game themes (fitness, career, love story)!
 
 ---
 
@@ -56,11 +72,14 @@ Then open your browser to `http://localhost:5173`
 
 ## 🎨 Customize Your Game
 
-1. **Edit** `game-config.json` - Change the story, character name, levels, and items
-2. **Choose** background colors and item positions
+**To create your own game:**
+1. **Copy** the `/template` directory to your own project
+2. **Edit** `constants.ts` - Change stories, levels, items, and colors
 3. **Run** `npm run dev` to see your game!
 
 **That's it!** No coding knowledge needed!
+
+Full instructions in [template/README.md](template/README.md)
 
 ---
 
@@ -88,20 +107,24 @@ Then open your browser to `http://localhost:5173`
 
 ## 📚 Documentation
 
-- **[QUICK_START.md](QUICK_START.md)** - For complete beginners
-- **[TEMPLATE_README.md](TEMPLATE_README.md)** - Detailed customization guide
-- **[examples/](examples/)** - Example game configurations
+**All documentation is in the [`/template`](template/) directory:**
+
+- **[template/README.md](template/README.md)** - Template quick start guide
+- **[template/QUICK_START.md](template/QUICK_START.md)** - For complete beginners
+- **[template/HOW_TO_CUSTOMIZE.md](template/HOW_TO_CUSTOMIZE.md)** - Step-by-step customization
+- **[template/TEMPLATE_README.md](template/TEMPLATE_README.md)** - Full documentation
+- **[template/examples/](template/examples/)** - Example game themes
 
 ---
 
 ## 🎨 Example Themes Included
 
-Check the `examples/` folder for ready-to-use configurations:
-- 💪 Fitness Journey
-- 💼 Career Path
-- 💕 Love Story
+Check the **[`template/examples/`](template/examples/)** folder for ready-to-use game ideas:
+- 💪 **Fitness Journey** - Transformation from couch to marathon
+- 💼 **Career Path** - College grad to tech leader
+- 💕 **Love Story** - First meeting to engagement
 
-Copy any example to `game-config.json` and customize it!
+Use these as inspiration for your own game!
 
 ---
 
