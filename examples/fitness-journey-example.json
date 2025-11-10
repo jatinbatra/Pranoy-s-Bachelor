@@ -1,0 +1,305 @@
+{
+  "gameInfo": {
+    "title": "Super Fit - My Fitness Journey",
+    "characterName": "Alex",
+    "description": "From couch potato to marathon runner - my fitness transformation!"
+  },
+
+  "levels": [
+    {
+      "id": 1,
+      "title": "World 1: The Wake-Up Call",
+      "story": "Saw myself in a photo and decided it was time for a change. The journey begins!",
+      "backgroundColors": {
+        "from": "gray-400",
+        "to": "gray-600"
+      },
+      "items": [
+        {
+          "id": "decision",
+          "name": "Made the Decision",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 50, "y": 50}
+        },
+        {
+          "id": "friend-support",
+          "name": "Friend's Encouragement",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 75, "y": 35}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "World 2: First Steps",
+      "story": "Started walking every day. It's tough, but I'm doing it! Avoiding junk food cravings...",
+      "backgroundColors": {
+        "from": "green-300",
+        "to": "green-500"
+      },
+      "items": [
+        {
+          "id": "walking",
+          "name": "Daily Walks",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 25, "y": 60}
+        },
+        {
+          "id": "water",
+          "name": "Drinking Water",
+          "type": "object",
+          "icon": "soap",
+          "position": {"x": 70, "y": 40}
+        },
+        {
+          "id": "junk-food",
+          "name": "Junk Food Temptation",
+          "type": "enemy",
+          "icon": "sugar",
+          "position": {"x": 50, "y": 70},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 35,
+            "maxX": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "World 3: Gym Membership",
+      "story": "Joined a gym! Time to level up my workout game. Push through the soreness!",
+      "backgroundColors": {
+        "from": "blue-400",
+        "to": "blue-700"
+      },
+      "items": [
+        {
+          "id": "gym",
+          "name": "Gym Membership",
+          "type": "achievement",
+          "icon": "house",
+          "position": {"x": 30, "y": 55}
+        },
+        {
+          "id": "trainer",
+          "name": "Personal Trainer",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 70, "y": 35}
+        },
+        {
+          "id": "soreness",
+          "name": "Muscle Soreness",
+          "type": "obstacle",
+          "icon": "sad",
+          "position": {"x": 50, "y": 75},
+          "isObstacle": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "World 4: Healthy Eating",
+      "story": "Learning to cook healthy meals. Meal prep Sundays are now a thing!",
+      "backgroundColors": {
+        "from": "lime-400",
+        "to": "emerald-600"
+      },
+      "items": [
+        {
+          "id": "meal-prep",
+          "name": "Meal Prep Master",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 40, "y": 45}
+        },
+        {
+          "id": "protein",
+          "name": "Protein Goals",
+          "type": "object",
+          "icon": "gauge",
+          "position": {"x": 75, "y": 30}
+        },
+        {
+          "id": "late-night",
+          "name": "Late Night Cravings",
+          "type": "enemy",
+          "icon": "sugar",
+          "position": {"x": 60, "y": 70},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 45,
+            "maxX": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "World 5: First 5K",
+      "story": "Signed up for a 5K race! Training hard and feeling strong. I can do this!",
+      "backgroundColors": {
+        "from": "orange-400",
+        "to": "red-500"
+      },
+      "items": [
+        {
+          "id": "training-plan",
+          "name": "Training Plan",
+          "type": "object",
+          "icon": "assignment",
+          "position": {"x": 25, "y": 60}
+        },
+        {
+          "id": "running-shoes",
+          "name": "New Running Shoes",
+          "type": "object",
+          "icon": "passport",
+          "position": {"x": 50, "y": 35}
+        },
+        {
+          "id": "5k-finish",
+          "name": "Finished 5K!",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 80, "y": 50}
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "World 6: The Plateau",
+      "story": "Hit a plateau in my progress. Feeling frustrated but not giving up!",
+      "backgroundColors": {
+        "from": "gray-500",
+        "to": "slate-700"
+      },
+      "items": [
+        {
+          "id": "plateau",
+          "name": "Progress Plateau",
+          "type": "obstacle",
+          "icon": "sad",
+          "position": {"x": 45, "y": 55},
+          "isObstacle": true
+        },
+        {
+          "id": "motivation",
+          "name": "Gym Buddy Support",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 20, "y": 35}
+        },
+        {
+          "id": "new-routine",
+          "name": "New Workout Routine",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 75, "y": 45}
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "World 7: Transformation",
+      "story": "The changes are real! Lost weight, gained muscle, and feeling amazing!",
+      "backgroundColors": {
+        "from": "purple-400",
+        "to": "purple-700"
+      },
+      "items": [
+        {
+          "id": "mirror",
+          "name": "Mirror Victory",
+          "type": "achievement",
+          "icon": "microsoft",
+          "position": {"x": 40, "y": 40}
+        },
+        {
+          "id": "energy",
+          "name": "More Energy",
+          "type": "object",
+          "icon": "gauge",
+          "position": {"x": 70, "y": 30}
+        },
+        {
+          "id": "confidence",
+          "name": "New Confidence",
+          "type": "achievement",
+          "icon": "diploma",
+          "position": {"x": 55, "y": 65}
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "World 8: Half Marathon",
+      "story": "Taking on a half marathon! If someone told me this a year ago, I would've laughed!",
+      "backgroundColors": {
+        "from": "cyan-400",
+        "to": "blue-600"
+      },
+      "items": [
+        {
+          "id": "long-runs",
+          "name": "Long Training Runs",
+          "type": "object",
+          "icon": "assignment",
+          "position": {"x": 30, "y": 50}
+        },
+        {
+          "id": "race-day",
+          "name": "Race Day!",
+          "type": "achievement",
+          "icon": "passport",
+          "position": {"x": 65, "y": 35}
+        },
+        {
+          "id": "half-finish",
+          "name": "Half Marathon Complete!",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 85, "y": 55}
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "World 9: Lifestyle Changed",
+      "story": "This isn't a temporary thing anymore - it's who I am now. Healthy, strong, and happy!",
+      "backgroundColors": {
+        "from": "yellow-400",
+        "to": "orange-600"
+      },
+      "items": [
+        {
+          "id": "lifestyle",
+          "name": "Healthy Lifestyle",
+          "type": "achievement",
+          "icon": "house",
+          "position": {"x": 35, "y": 50}
+        },
+        {
+          "id": "inspire-others",
+          "name": "Inspiring Others",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 65, "y": 35}
+        },
+        {
+          "id": "future-goals",
+          "name": "New Goals Ahead",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 50, "y": 70}
+        }
+      ]
+    }
+  ]
+}

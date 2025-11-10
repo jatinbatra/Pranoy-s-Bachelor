@@ -1,0 +1,332 @@
+{
+  "gameInfo": {
+    "title": "Super Pranoy - The Bachelor's Journey",
+    "characterName": "Pranoy",
+    "description": "A Super Mario-style platformer game about Pranoy's journey from Abu Dhabi to his wedding!"
+  },
+
+  "instructions": {
+    "howToCustomize": [
+      "1. Change the 'characterName' above to your name or any character you want",
+      "2. Edit each level's 'title' and 'story' to tell your own journey",
+      "3. Customize 'backgroundColors' - use any color names or hex codes",
+      "4. Add/remove/move items by changing their positions (0-100 scale)",
+      "5. Set items as enemies by adding 'isEnemy: true'",
+      "6. That's it! No coding needed - just edit this file!"
+    ],
+    "itemTypes": [
+      "achievement - Something you accomplished",
+      "person - Someone important in your story",
+      "object - A meaningful object or milestone",
+      "enemy - An obstacle or challenge (moves automatically)",
+      "obstacle - Something to avoid (stays in place)"
+    ]
+  },
+
+  "levels": [
+    {
+      "id": 1,
+      "title": "World 1: The Beginning",
+      "story": "This is where your journey starts! Replace this text with your own story.",
+      "backgroundColors": {
+        "from": "yellow-600",
+        "to": "yellow-800"
+      },
+      "items": [
+        {
+          "id": "item1",
+          "name": "First Achievement",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 80, "y": 50}
+        },
+        {
+          "id": "item2",
+          "name": "Second Achievement",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 40, "y": 30}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "World 2: New Challenges",
+      "story": "Your journey continues with new challenges and experiences!",
+      "backgroundColors": {
+        "from": "blue-300",
+        "to": "indigo-400"
+      },
+      "items": [
+        {
+          "id": "item3",
+          "name": "Good Habit",
+          "type": "achievement",
+          "icon": "soap",
+          "position": {"x": 30, "y": 60}
+        },
+        {
+          "id": "item4",
+          "name": "Another Good Habit",
+          "type": "achievement",
+          "icon": "soap",
+          "position": {"x": 75, "y": 40}
+        },
+        {
+          "id": "enemy1",
+          "name": "Bad Habit",
+          "type": "enemy",
+          "icon": "sugar",
+          "position": {"x": 50, "y": 65},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 30,
+            "maxX": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "World 3: Big Achievement",
+      "story": "You worked hard and achieved something amazing!",
+      "backgroundColors": {
+        "from": "gray-700",
+        "to": "gray-900"
+      },
+      "items": [
+        {
+          "id": "item5",
+          "name": "Power-Up from Friends",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 20, "y": 70}
+        },
+        {
+          "id": "item6",
+          "name": "Major Achievement!",
+          "type": "achievement",
+          "icon": "microsoft",
+          "position": {"x": 80, "y": 30}
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "World 4: Love Story",
+      "story": "Something special happened - you met someone amazing!",
+      "backgroundColors": {
+        "from": "pink-400",
+        "to": "purple-500"
+      },
+      "items": [
+        {
+          "id": "item7",
+          "name": "Meeting Someone Special",
+          "type": "person",
+          "icon": "hinge",
+          "position": {"x": 30, "y": 30}
+        },
+        {
+          "id": "item8",
+          "name": "Special Person",
+          "type": "person",
+          "icon": "srishti",
+          "position": {"x": 70, "y": 60}
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "World 5: Adventures Together",
+      "story": "New adventures and experiences with your special person!",
+      "backgroundColors": {
+        "from": "green-400",
+        "to": "teal-500"
+      },
+      "items": [
+        {
+          "id": "item9",
+          "name": "New Skill Learned",
+          "type": "achievement",
+          "icon": "car",
+          "position": {"x": 20, "y": 70}
+        },
+        {
+          "id": "item10",
+          "name": "Travel Memory",
+          "type": "object",
+          "icon": "passport",
+          "position": {"x": 75, "y": 40}
+        },
+        {
+          "id": "item11",
+          "name": "Together",
+          "type": "person",
+          "icon": "srishti",
+          "position": {"x": 50, "y": 30}
+        },
+        {
+          "id": "obstacle1",
+          "name": "Challenge!",
+          "type": "obstacle",
+          "icon": "pothole",
+          "position": {"x": 60, "y": 80},
+          "isObstacle": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "World 6: Overcoming Setbacks",
+      "story": "Not everything goes as planned, but you have support!",
+      "backgroundColors": {
+        "from": "gray-500",
+        "to": "blue-800"
+      },
+      "items": [
+        {
+          "id": "obstacle2",
+          "name": "Setback",
+          "type": "obstacle",
+          "icon": "sad",
+          "position": {"x": 50, "y": 50},
+          "isObstacle": true
+        },
+        {
+          "id": "item12",
+          "name": "Support System",
+          "type": "person",
+          "icon": "srishti",
+          "position": {"x": 20, "y": 30}
+        },
+        {
+          "id": "item13",
+          "name": "Staying Responsible",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 80, "y": 40}
+        },
+        {
+          "id": "item14",
+          "name": "Friends Help",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 35, "y": 70}
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "World 7: Career Success",
+      "story": "Hard work pays off! You land an amazing opportunity!",
+      "backgroundColors": {
+        "from": "yellow-400",
+        "to": "orange-500"
+      },
+      "items": [
+        {
+          "id": "item15",
+          "name": "Dream Job",
+          "type": "achievement",
+          "icon": "amazon",
+          "position": {"x": 60, "y": 40}
+        },
+        {
+          "id": "item16",
+          "name": "New Home",
+          "type": "object",
+          "icon": "house",
+          "position": {"x": 30, "y": 70}
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "World 8: The Big Moment",
+      "story": "Time for the most important question of your life!",
+      "backgroundColors": {
+        "from": "red-400",
+        "to": "pink-500"
+      },
+      "items": [
+        {
+          "id": "item17",
+          "name": "Special Planning",
+          "type": "object",
+          "icon": "seaplane",
+          "position": {"x": 25, "y": 30}
+        },
+        {
+          "id": "item18",
+          "name": "Memory Keeper",
+          "type": "object",
+          "icon": "photographer",
+          "position": {"x": 50, "y": 70}
+        },
+        {
+          "id": "item19",
+          "name": "The Big Question",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 75, "y": 40}
+        },
+        {
+          "id": "item20",
+          "name": "Special Memory",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 80, "y": 20}
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "World 9: Happily Ever After",
+      "story": "The final chapter begins - your new life together!",
+      "backgroundColors": {
+        "from": "indigo-500",
+        "to": "purple-800"
+      },
+      "items": [
+        {
+          "id": "item21",
+          "name": "Making It Official",
+          "type": "achievement",
+          "icon": "diploma",
+          "position": {"x": 70, "y": 60}
+        },
+        {
+          "id": "item22",
+          "name": "Life Partner",
+          "type": "person",
+          "icon": "srishti",
+          "position": {"x": 30, "y": 40}
+        },
+        {
+          "id": "item23",
+          "name": "Future Adventures",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 50, "y": 20}
+        }
+      ]
+    }
+  ],
+
+  "availableIcons": {
+    "achievements": ["microsoft", "amazon", "diploma", "gauge", "assignment", "passport", "ring"],
+    "people": ["srishti", "friends"],
+    "objects": ["car", "house", "soap", "seaplane", "photographer", "memory", "hinge"],
+    "enemies": ["sugar", "sad", "pothole"]
+  },
+
+  "availableColors": [
+    "red", "orange", "yellow", "green", "teal", "blue", "indigo", "purple", "pink",
+    "gray", "slate", "zinc", "neutral", "stone", "amber", "lime", "emerald", "cyan",
+    "sky", "violet", "fuchsia", "rose"
+  ],
+
+  "colorShades": ["50", "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+}

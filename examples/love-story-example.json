@@ -1,0 +1,313 @@
+{
+  "gameInfo": {
+    "title": "Super Love - Our Story",
+    "characterName": "Chris",
+    "description": "From first meeting to forever - our love story in game form!"
+  },
+
+  "levels": [
+    {
+      "id": 1,
+      "title": "World 1: The First Meeting",
+      "story": "I saw you across the room at that coffee shop. Little did I know my life was about to change!",
+      "backgroundColors": {
+        "from": "amber-300",
+        "to": "orange-500"
+      },
+      "items": [
+        {
+          "id": "coffee-shop",
+          "name": "The Coffee Shop",
+          "type": "object",
+          "icon": "house",
+          "position": {"x": 35, "y": 50}
+        },
+        {
+          "id": "first-glance",
+          "name": "First Glance",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 65, "y": 40}
+        },
+        {
+          "id": "nervousness",
+          "name": "Nervousness",
+          "type": "enemy",
+          "icon": "sad",
+          "position": {"x": 50, "y": 70},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 35,
+            "maxX": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "World 2: The First Date",
+      "story": "Finally got the courage to ask you out! Dinner and a movie - classic but perfect!",
+      "backgroundColors": {
+        "from": "pink-300",
+        "to": "rose-500"
+      },
+      "items": [
+        {
+          "id": "asked-out",
+          "name": "You Said Yes!",
+          "type": "achievement",
+          "icon": "hinge",
+          "position": {"x": 30, "y": 45}
+        },
+        {
+          "id": "first-date",
+          "name": "First Date",
+          "type": "object",
+          "icon": "passport",
+          "position": {"x": 60, "y": 35}
+        },
+        {
+          "id": "date-memory",
+          "name": "Special Memory",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 75, "y": 65}
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "World 3: Getting to Know Each Other",
+      "story": "Long talks, shared interests, and discovering we have so much in common!",
+      "backgroundColors": {
+        "from": "purple-300",
+        "to": "purple-600"
+      },
+      "items": [
+        {
+          "id": "shared-hobbies",
+          "name": "Shared Hobbies",
+          "type": "object",
+          "icon": "friends",
+          "position": {"x": 40, "y": 50}
+        },
+        {
+          "id": "late-night-calls",
+          "name": "Late Night Calls",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 70, "y": 40}
+        },
+        {
+          "id": "past-baggage",
+          "name": "Past Baggage",
+          "type": "obstacle",
+          "icon": "pothole",
+          "position": {"x": 55, "y": 75},
+          "isObstacle": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "World 4: Making It Official",
+      "story": "That perfect moment when we decided to be together. Best decision ever!",
+      "backgroundColors": {
+        "from": "red-400",
+        "to": "pink-500"
+      },
+      "items": [
+        {
+          "id": "official",
+          "name": "Made It Official",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 50, "y": 45}
+        },
+        {
+          "id": "telling-friends",
+          "name": "Told Our Friends",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 30, "y": 35}
+        },
+        {
+          "id": "first-photo",
+          "name": "First Couple Photo",
+          "type": "object",
+          "icon": "photographer",
+          "position": {"x": 75, "y": 60}
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "World 5: Adventures Together",
+      "story": "Road trips, new experiences, and creating memories we'll cherish forever!",
+      "backgroundColors": {
+        "from": "teal-400",
+        "to": "cyan-600"
+      },
+      "items": [
+        {
+          "id": "road-trip",
+          "name": "Epic Road Trip",
+          "type": "achievement",
+          "icon": "car",
+          "position": {"x": 25, "y": 55}
+        },
+        {
+          "id": "travel-stamps",
+          "name": "Travel Adventures",
+          "type": "object",
+          "icon": "passport",
+          "position": {"x": 60, "y": 35}
+        },
+        {
+          "id": "travel-memories",
+          "name": "Travel Memories",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 80, "y": 50}
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "World 6: First Challenge",
+      "story": "Every relationship has tough moments. But we worked through it and came out stronger!",
+      "backgroundColors": {
+        "from": "gray-500",
+        "to": "slate-700"
+      },
+      "items": [
+        {
+          "id": "argument",
+          "name": "First Big Argument",
+          "type": "obstacle",
+          "icon": "sad",
+          "position": {"x": 45, "y": 60},
+          "isObstacle": true
+        },
+        {
+          "id": "communication",
+          "name": "Better Communication",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 25, "y": 40}
+        },
+        {
+          "id": "stronger",
+          "name": "Stronger Together",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 75, "y": 35}
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "World 7: Meeting the Families",
+      "story": "Meeting each other's families! Nervous but excited to become part of each other's worlds!",
+      "backgroundColors": {
+        "from": "green-400",
+        "to": "emerald-600"
+      },
+      "items": [
+        {
+          "id": "family-dinner",
+          "name": "Family Dinner",
+          "type": "object",
+          "icon": "house",
+          "position": {"x": 35, "y": 50}
+        },
+        {
+          "id": "family-approval",
+          "name": "Family's Blessing",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 65, "y": 35}
+        },
+        {
+          "id": "family-photos",
+          "name": "Family Photos",
+          "type": "object",
+          "icon": "photographer",
+          "position": {"x": 50, "y": 70}
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "World 8: The Big Question",
+      "story": "I planned it perfectly. The ring, the place, the moment. When I asked, you said yes!",
+      "backgroundColors": {
+        "from": "yellow-400",
+        "to": "orange-600"
+      },
+      "items": [
+        {
+          "id": "ring-shopping",
+          "name": "The Perfect Ring",
+          "type": "object",
+          "icon": "ring",
+          "position": {"x": 25, "y": 45}
+        },
+        {
+          "id": "secret-planning",
+          "name": "Secret Planning",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 50, "y": 30}
+        },
+        {
+          "id": "proposal",
+          "name": "The Proposal",
+          "type": "achievement",
+          "icon": "diploma",
+          "position": {"x": 75, "y": 50}
+        },
+        {
+          "id": "photographer-hidden",
+          "name": "Secret Photographer",
+          "type": "object",
+          "icon": "photographer",
+          "position": {"x": 65, "y": 75}
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "World 9: Forever Starts Now",
+      "story": "From strangers to partners for life. Here's to our happily ever after!",
+      "backgroundColors": {
+        "from": "rose-400",
+        "to": "pink-700"
+      },
+      "items": [
+        {
+          "id": "engagement",
+          "name": "Engaged!",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 30, "y": 50}
+        },
+        {
+          "id": "together",
+          "name": "Together Forever",
+          "type": "person",
+          "icon": "srishti",
+          "position": {"x": 60, "y": 40}
+        },
+        {
+          "id": "future",
+          "name": "Our Future",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 50, "y": 75}
+        }
+      ]
+    }
+  ]
+}

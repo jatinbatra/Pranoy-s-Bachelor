@@ -1,0 +1,311 @@
+{
+  "gameInfo": {
+    "title": "Super Career - My Professional Journey",
+    "characterName": "Jordan",
+    "description": "From college graduate to tech leader - my career adventure!"
+  },
+
+  "levels": [
+    {
+      "id": 1,
+      "title": "World 1: College Dreams",
+      "story": "Final semester of college. Time to figure out what I want to do with my life!",
+      "backgroundColors": {
+        "from": "indigo-400",
+        "to": "indigo-700"
+      },
+      "items": [
+        {
+          "id": "graduation",
+          "name": "Graduation Day",
+          "type": "achievement",
+          "icon": "diploma",
+          "position": {"x": 50, "y": 45}
+        },
+        {
+          "id": "resume",
+          "name": "Built My Resume",
+          "type": "object",
+          "icon": "assignment",
+          "position": {"x": 75, "y": 35}
+        },
+        {
+          "id": "career-fair",
+          "name": "Career Fair",
+          "type": "object",
+          "icon": "friends",
+          "position": {"x": 30, "y": 60}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "World 2: The Job Hunt",
+      "story": "Sending applications everywhere! Getting rejected left and right, but staying positive!",
+      "backgroundColors": {
+        "from": "gray-400",
+        "to": "blue-600"
+      },
+      "items": [
+        {
+          "id": "applications",
+          "name": "100 Applications Sent",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 25, "y": 55}
+        },
+        {
+          "id": "rejection1",
+          "name": "Rejection Email",
+          "type": "enemy",
+          "icon": "sad",
+          "position": {"x": 55, "y": 70},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 40,
+            "maxX": 70
+          }
+        },
+        {
+          "id": "interview",
+          "name": "Got an Interview!",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 80, "y": 40}
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "World 3: First Job!",
+      "story": "Got my first real job! Junior developer at a startup. Time to prove myself!",
+      "backgroundColors": {
+        "from": "green-400",
+        "to": "teal-600"
+      },
+      "items": [
+        {
+          "id": "offer-letter",
+          "name": "Offer Letter",
+          "type": "achievement",
+          "icon": "microsoft",
+          "position": {"x": 40, "y": 45}
+        },
+        {
+          "id": "first-day",
+          "name": "First Day of Work",
+          "type": "object",
+          "icon": "house",
+          "position": {"x": 70, "y": 35}
+        },
+        {
+          "id": "mentor",
+          "name": "Found a Mentor",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 50, "y": 70}
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "World 4: Learning Curve",
+      "story": "So much to learn! Making mistakes but growing every day. Imposter syndrome is real!",
+      "backgroundColors": {
+        "from": "purple-400",
+        "to": "purple-700"
+      },
+      "items": [
+        {
+          "id": "code-review",
+          "name": "Survived Code Review",
+          "type": "achievement",
+          "icon": "assignment",
+          "position": {"x": 30, "y": 50}
+        },
+        {
+          "id": "imposter",
+          "name": "Imposter Syndrome",
+          "type": "obstacle",
+          "icon": "sad",
+          "position": {"x": 55, "y": 75},
+          "isObstacle": true
+        },
+        {
+          "id": "shipped",
+          "name": "Shipped First Feature",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 75, "y": 40}
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "World 5: Side Projects",
+      "story": "Building side projects to learn new skills. Balancing work and learning!",
+      "backgroundColors": {
+        "from": "orange-400",
+        "to": "red-500"
+      },
+      "items": [
+        {
+          "id": "side-project",
+          "name": "Launched Side Project",
+          "type": "achievement",
+          "icon": "passport",
+          "position": {"x": 35, "y": 45}
+        },
+        {
+          "id": "github",
+          "name": "Active GitHub Profile",
+          "type": "object",
+          "icon": "assignment",
+          "position": {"x": 65, "y": 35}
+        },
+        {
+          "id": "burnout",
+          "name": "Avoiding Burnout",
+          "type": "enemy",
+          "icon": "sad",
+          "position": {"x": 50, "y": 70},
+          "isEnemy": true,
+          "movement": {
+            "type": "horizontal",
+            "minX": 35,
+            "maxX": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "World 6: Career Growth",
+      "story": "Got promoted to mid-level! More responsibility, more impact, more learning!",
+      "backgroundColors": {
+        "from": "blue-400",
+        "to": "indigo-600"
+      },
+      "items": [
+        {
+          "id": "promotion",
+          "name": "Promotion to Mid-Level",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 50, "y": 40}
+        },
+        {
+          "id": "salary",
+          "name": "Salary Increase",
+          "type": "object",
+          "icon": "gauge",
+          "position": {"x": 75, "y": 30}
+        },
+        {
+          "id": "team",
+          "name": "Leading Small Team",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 30, "y": 65}
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "World 7: Big Tech Dream",
+      "story": "Applied to FAANG companies. The interviews are intense but I'm ready!",
+      "backgroundColors": {
+        "from": "red-400",
+        "to": "pink-600"
+      },
+      "items": [
+        {
+          "id": "leetcode",
+          "name": "LeetCode Grind",
+          "type": "object",
+          "icon": "assignment",
+          "position": {"x": 25, "y": 55}
+        },
+        {
+          "id": "study-group",
+          "name": "Study Group",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 50, "y": 35}
+        },
+        {
+          "id": "faang-offer",
+          "name": "FAANG Offer!",
+          "type": "achievement",
+          "icon": "amazon",
+          "position": {"x": 80, "y": 50}
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "World 8: Tech Leadership",
+      "story": "Senior engineer now! Mentoring juniors and making architectural decisions!",
+      "backgroundColors": {
+        "from": "yellow-400",
+        "to": "orange-600"
+      },
+      "items": [
+        {
+          "id": "architecture",
+          "name": "System Design",
+          "type": "achievement",
+          "icon": "gauge",
+          "position": {"x": 40, "y": 45}
+        },
+        {
+          "id": "mentoring",
+          "name": "Mentoring Others",
+          "type": "person",
+          "icon": "friends",
+          "position": {"x": 70, "y": 35}
+        },
+        {
+          "id": "conference",
+          "name": "Conference Speaker",
+          "type": "achievement",
+          "icon": "diploma",
+          "position": {"x": 55, "y": 70}
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "World 9: The Future",
+      "story": "Tech lead of a major project. Living my dream and inspiring the next generation!",
+      "backgroundColors": {
+        "from": "purple-500",
+        "to": "indigo-800"
+      },
+      "items": [
+        {
+          "id": "tech-lead",
+          "name": "Tech Lead Role",
+          "type": "achievement",
+          "icon": "ring",
+          "position": {"x": 45, "y": 50}
+        },
+        {
+          "id": "impact",
+          "name": "Millions of Users",
+          "type": "object",
+          "icon": "gauge",
+          "position": {"x": 70, "y": 35}
+        },
+        {
+          "id": "next-chapter",
+          "name": "Next Chapter",
+          "type": "object",
+          "icon": "memory",
+          "position": {"x": 50, "y": 75}
+        }
+      ]
+    }
+  ]
+}
